@@ -27,26 +27,22 @@ dados_acoes <- read_excel("Base_fundamentus.xlsx")
 
 ## Base de dados já alterado para variáveis qualitativas
 
-
 # Remover as variáveis que não utilizaremos
 dados_acoes <- dados_acoes %>% 
-  select(-PSR, -Cotacao, -P_Ativo, -P_CapGiro, -P_EBIT, -P_AtivCircLiq, -EV_EBIT, -EV_EBITDA, -MrgEbit, -LiqCorr, -ROIC, -Liq2meses, -PatrimLiq, -DivBrut_Patrim, -P_L, -P_VP, -DivYield, -MrgLiq, -ROE, -CrescRec5a,
-  )
+  select(2, 22:27)
 
 # Selecionar as Ações que tenho na Carteira
 dados_acoes <- dados_acoes %>% 
   filter(Papel=="TAEE11" |
-           Papel=="CSMG3"  |
-           Papel=="FLRY3"  |
-           Papel=="BRSR6"  |
-           Papel=="BBSE3"  |
-           Papel=="COGN3"  |
-           Papel=="IRBR3"  |
-           Papel=="MEAL3"  |
-           Papel=="MGLU3"  |
-           Papel=="ODPV3"  |
-           Papel=="SAPR4"  |
-           Papel=="AMER3",) 
+         Papel=="FLRY3"  |
+         Papel=="BRSR6"  |
+         Papel=="BBSE3"  |
+         Papel=="COGN3"  |
+         Papel=="IRBR3"  |
+         Papel=="MEAL3"  |
+         Papel=="MGLU3"  |
+         Papel=="SAPR4"  |
+         Papel=="AMER3",) 
 
 summary(dados_acoes)
 
@@ -101,6 +97,7 @@ sjt.xtab(var.row = dados_acoes$Categ_PL,
 
 # Vamos gerar a ACM
 ACM <- dudi.acm(dados_acoes, scannf = FALSE)
+
 
 # Analisando as variâncias de cada dimensão
 perc_variancia <- (ACM$eig / sum(ACM$eig)) * 100
