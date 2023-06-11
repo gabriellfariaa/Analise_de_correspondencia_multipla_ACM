@@ -1,7 +1,4 @@
-# Análise de Correspondência Múltipla
-
-
-# Fonte:https://www.fundamentus.com.br
+## Análise de Correspondência Múltipla
 
 # Instalação e carregamento dos pacotes utilizados
 pacotes <- c("plotly", 
@@ -26,7 +23,6 @@ if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
 
 # Importando a base de dados
 dados_acoes <- read_excel("Base_fundamentus.xlsx")
-
 
 
 ## Base de dados já alterado para variáveis qualitativas
