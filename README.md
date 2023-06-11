@@ -35,7 +35,7 @@ Importando a base de dados, removido as variáveis que não utilizaremos e selec
 No exemplo mencionado acima, foi analisada a associação entre as categorias de ROE e Dividend Yield. O resultado apresentou um p-valor menor do que o nível de significância de 5%, o que significa que a hipótese nula foi rejeitada e podemos considerar que há uma associação significativa entre essas duas variáveis.
 
 # Plotando o mapa perceptual
-![image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6R2nXF57ixCBHHz7QM-eFQ.png)
+![image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*y28X5xKb19SNylVGMfnPrg.png)
 
 # Conclusão
 Com base na análise do Mapa Perceptual, podemos concluir que as ações mais interessantes para investimentos recorrentes são aquelas identificadas no segundo e terceiro quadrante do mapa. Essas empresas apresentam associações positivas entre Margem Líquida, ROE, P/L e Dividend Yield ótimo, além de apresentar crescimento nos últimos 5 anos. As empresas que se enquadram nesse perfil são: TAEE11, CSMG3, BRSR6, FLRY3, SAPR4 e ODPV3.
